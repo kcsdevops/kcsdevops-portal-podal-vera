@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+/build
+
+# Production
+/dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+.env.local
+
+# Service Principal credentials
+*.tfvars
+terraform.tfstate*
+.terraform/
+
+# Azure credentials
+auth.json
+credentials.json
+
+# Vercel
+.vercel
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Azure
+.azure/
+azure.yaml.bak
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

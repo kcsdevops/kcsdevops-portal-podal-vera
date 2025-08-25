@@ -1,0 +1,49 @@
+name: Deploy Static Web App
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      STATIC_WEB_APP_NAME: az-ppv-7b9198788aae9
+      RESOURCE_GROUP: rg-portal-podal-vera-brasil
+      OUTPUT_LOCATION: out
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./
+
+      - name: Build
+        run: |
+          npm run build
+          # The project is configured with output: 'export' in next.config.js
+          # This generates static files in the 'out' directory
+        working-directory: ./
+
+      # Deploy using Static Web Apps action with deployment token
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: 'upload'
+          app_location: '/'
+          api_location: ''
+          output_location: ${{ env.OUTPUT_LOCATION }}

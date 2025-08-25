@@ -1,0 +1,301 @@
+# Azure DevOps Pipeline para Portal Podal Vera
+# Pipeline de CI/CD para aplicação Next.js com deploy no Azure Static Web Apps
+
+trigger:
+  branches:
+    include:
+      - master
+      - main
+      - develop
+  paths:
+    exclude:
+      - README.md
+      - docs/*
+      - .gitignore
+
+pr:
+  branches:
+    include:
+      - master
+      - main
+  paths:
+    exclude:
+      - README.md
+      - docs/*
+
+variables:
+  # Build Variables
+  nodeVersion: '18.x'
+  buildConfiguration: 'production'
+  
+  # Azure Variables
+  azureSubscription: 'Azure-Subscription'
+  resourceGroupName: 'rg-portal-podal-vera'
+  staticWebAppName: 'swa-portal-podal-vera'
+  
+  # Project Variables
+  projectName: 'Portal Podal Vera'
+  buildOutputDirectory: 'out'
+  sourceDirectory: '$(System.DefaultWorkingDirectory)'
+
+stages:
+  # Stage 1: Build and Test
+  - stage: BuildAndTest
+    displayName: 'Build and Test Application'
+    jobs:
+      - job: BuildJob
+        displayName: 'Build Next.js Application'
+        pool:
+          vmImage: 'ubuntu-latest'
+        
+        steps:
+          # Checkout do código
+          - checkout: self
+            displayName: 'Checkout Repository'
+            fetchDepth: 1
+          
+          # Setup Node.js
+          - task: NodeTool@0
+            displayName: 'Setup Node.js $(nodeVersion)'
+            inputs:
+              versionSpec: '$(nodeVersion)'
+          
+          # Cache node_modules para acelerar builds
+          - task: Cache@2
+            displayName: 'Cache node_modules'
+            inputs:
+              key: 'npm | "$(Agent.OS)" | package-lock.json'
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+                npm
+              path: '$(npm_config_cache)'
+          
+          # Install dependencies
+          - script: |
+              npm ci --production=false
+            displayName: 'Install Dependencies'
+            workingDirectory: '$(sourceDirectory)'
+          
+          # Run linting
+          - script: |
+              npm run lint
+            displayName: 'Run ESLint'
+            workingDirectory: '$(sourceDirectory)'
+            continueOnError: true
+          
+          # Run type checking
+          - script: |
+              npm run type-check || npx tsc --noEmit
+            displayName: 'TypeScript Type Check'
+            workingDirectory: '$(sourceDirectory)'
+            continueOnError: true
+          
+          # Run tests (se existirem)
+          - script: |
+              if [ -f "jest.config.js" ] || [ -f "jest.config.ts" ]; then
+                npm test -- --coverage --watchAll=false
+              else
+                echo "No Jest configuration found, skipping tests"
+              fi
+            displayName: 'Run Unit Tests'
+            workingDirectory: '$(sourceDirectory)'
+            continueOnError: true
+          
+          # Build da aplicação
+          - script: |
+              npm run build
+            displayName: 'Build Next.js Application'
+            workingDirectory: '$(sourceDirectory)'
+            env:
+              NODE_ENV: production
+              NEXT_PUBLIC_API_URL: 'https://your-backend-url.azurecontainerapps.io'
+          
+          # Publish build artifacts
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Build Artifacts'
+            inputs:
+              pathToPublish: '$(sourceDirectory)/out'
+              artifactName: 'portal-podal-vera-build'
+              artifactType: 'Container'
+            condition: succeeded()
+          
+          # Publish source for deployment
+          - task: PublishBuildArtifacts@1
+            displayName: 'Publish Source Code'
+            inputs:
+              pathToPublish: '$(sourceDirectory)'
+              artifactName: 'portal-podal-vera-source'
+              artifactType: 'Container'
+            condition: succeeded()
+
+  # Stage 2: Security and Quality
+  - stage: SecurityAndQuality
+    displayName: 'Security and Quality Checks'
+    dependsOn: BuildAndTest
+    condition: succeeded()
+    jobs:
+      - job: SecurityScan
+        displayName: 'Security and Dependency Scan'
+        pool:
+          vmImage: 'ubuntu-latest'
+        
+        steps:
+          # Download source artifacts
+          - task: DownloadBuildArtifacts@0
+            displayName: 'Download Source Artifacts'
+            inputs:
+              buildType: 'current'
+              artifactName: 'portal-podal-vera-source'
+              downloadPath: '$(System.ArtifactsDirectory)'
+          
+          # Setup Node.js
+          - task: NodeTool@0
+            displayName: 'Setup Node.js $(nodeVersion)'
+            inputs:
+              versionSpec: '$(nodeVersion)'
+          
+          # Install dependencies for security scan
+          - script: |
+              cd $(System.ArtifactsDirectory)/portal-podal-vera-source
+              npm ci --production=false
+            displayName: 'Install Dependencies for Security Scan'
+          
+          # NPM Audit para vulnerabilidades
+          - script: |
+              cd $(System.ArtifactsDirectory)/portal-podal-vera-source
+              npm audit --audit-level=high || echo "Security vulnerabilities found - check npm audit output"
+            displayName: 'NPM Security Audit'
+            continueOnError: true
+          
+          # Dependency Check (opcional)
+          - script: |
+              cd $(System.ArtifactsDirectory)/portal-podal-vera-source
+              npx license-checker --summary
+            displayName: 'License Check'
+            continueOnError: true
+
+  # Stage 3: Deploy to Azure Static Web Apps
+  - stage: DeployProduction
+    displayName: 'Deploy to Production'
+    dependsOn: 
+      - BuildAndTest
+      - SecurityAndQuality
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    jobs:
+      - deployment: DeployToAzure
+        displayName: 'Deploy to Azure Static Web Apps'
+        pool:
+          vmImage: 'ubuntu-latest'
+        environment: 'production'
+        
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download build artifacts
+                - task: DownloadBuildArtifacts@0
+                  displayName: 'Download Build Artifacts'
+                  inputs:
+                    buildType: 'current'
+                    artifactName: 'portal-podal-vera-source'
+                    downloadPath: '$(Pipeline.Workspace)'
+                
+                # Deploy to Azure Static Web Apps
+                - task: AzureStaticWebApp@0
+                  displayName: 'Deploy to Azure Static Web Apps'
+                  inputs:
+                    azure_static_web_apps_api_token: '$(AZURE_STATIC_WEB_APPS_API_TOKEN)'
+                    repo_token: '$(System.AccessToken)'
+                    action: 'upload'
+                    app_location: '$(Pipeline.Workspace)/portal-podal-vera-source'
+                    api_location: ''
+                    output_location: 'out'
+                    skip_app_build: true
+
+  # Stage 4: Post-Deployment Tests
+  - stage: PostDeploymentTests
+    displayName: 'Post-Deployment Validation'
+    dependsOn: DeployProduction
+    condition: succeeded()
+    jobs:
+      - job: SmokeTests
+        displayName: 'Smoke Tests'
+        pool:
+          vmImage: 'ubuntu-latest'
+        
+        steps:
+          # Setup Node.js for Playwright tests
+          - task: NodeTool@0
+            displayName: 'Setup Node.js $(nodeVersion)'
+            inputs:
+              versionSpec: '$(nodeVersion)'
+          
+          # Download source for tests
+          - task: DownloadBuildArtifacts@0
+            displayName: 'Download Source for Tests'
+            inputs:
+              buildType: 'current'
+              artifactName: 'portal-podal-vera-source'
+              downloadPath: '$(System.ArtifactsDirectory)'
+          
+          # Install dependencies and run E2E tests
+          - script: |
+              cd $(System.ArtifactsDirectory)/portal-podal-vera-source
+              npm ci
+              npx playwright install
+            displayName: 'Install Test Dependencies'
+          
+          # Run Playwright E2E tests
+          - script: |
+              cd $(System.ArtifactsDirectory)/portal-podal-vera-source
+              npx playwright test --reporter=list
+            displayName: 'Run E2E Tests'
+            continueOnError: true
+            env:
+              PLAYWRIGHT_BASE_URL: 'https://brave-pebble-0a0b5420f.1.azurestaticapps.net'
+          
+          # Publish test results
+          - task: PublishTestResults@2
+            displayName: 'Publish Test Results'
+            inputs:
+              testResultsFormat: 'JUnit'
+              testResultsFiles: '$(System.ArtifactsDirectory)/portal-podal-vera-source/test-results/results.xml'
+              mergeTestResults: true
+              testRunTitle: 'E2E Tests'
+            condition: always()
+
+  # Stage 5: Staging Deploy (opcional)
+  - stage: DeployStaging
+    displayName: 'Deploy to Staging'
+    dependsOn: BuildAndTest
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+    jobs:
+      - deployment: DeployToStaging
+        displayName: 'Deploy to Staging Environment'
+        pool:
+          vmImage: 'ubuntu-latest'
+        environment: 'staging'
+        
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download build artifacts
+                - task: DownloadBuildArtifacts@0
+                  displayName: 'Download Build Artifacts'
+                  inputs:
+                    buildType: 'current'
+                    artifactName: 'portal-podal-vera-source'
+                    downloadPath: '$(Pipeline.Workspace)'
+                
+                # Deploy to Azure Static Web Apps (Staging)
+                - task: AzureStaticWebApp@0
+                  displayName: 'Deploy to Staging'
+                  inputs:
+                    azure_static_web_apps_api_token: '$(AZURE_STATIC_WEB_APPS_API_TOKEN_STAGING)'
+                    repo_token: '$(System.AccessToken)'
+                    action: 'upload'
+                    app_location: '$(Pipeline.Workspace)/portal-podal-vera-source'
+                    api_location: ''
+                    output_location: 'out'
+                    skip_app_build: true

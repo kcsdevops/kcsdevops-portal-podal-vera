@@ -1,0 +1,957 @@
+# Page snapshot
+
+```yaml
+- main:
+  - img
+  - text: (11) 9 6738-1029
+  - img
+  - text: contato@veracare.com.br
+  - img
+  - text: "Seg-Sex: 8h-18h | Sáb: 8h-12h"
+  - img
+  - text: São Paulo - SP VC
+  - heading "PODOLOGIA PROFISSIONAL" [level=1]
+  - paragraph: Em Formação - Breve Inauguração
+  - navigation:
+    - link "Início":
+      - /url: /
+    - link "Serviços":
+      - /url: /servicos
+    - link "Educação":
+      - /url: /educacao
+    - link "Estudos":
+      - /url: /trabalhos
+    - link "Produtos":
+      - /url: "#produtos"
+    - link "Tecnologia":
+      - /url: "#tecnologia"
+    - link "Galeria":
+      - /url: "#galeria"
+    - link "Sobre":
+      - /url: "#sobre"
+    - link "Contato":
+      - /url: "#contato"
+  - link "Instagram":
+    - /url: https://www.instagram.com/veracare_podologa/
+    - img
+    - text: Instagram
+  - button "Login":
+    - img
+    - text: Login
+  - button "Carrinho 0":
+    - img
+    - text: Carrinho 0
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - text: 🎓 Em Formação - Breve Inauguração
+  - heading "Futura Podóloga Em Preparação" [level=1]
+  - paragraph: Estudante de Podologia planejando o consultório dos sonhos! Em breve ofereceremos cuidados especializados com tecnologia de ponta e produtos nano cosméticos exclusivos.
+  - img
+  - text: Preparação Profissional
+  - img
+  - text: Planejamento Completo
+  - img
+  - text: Tecnologia Moderna
+  - img
+  - text: Foco na Qualidade
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+    - text: Falar com a Especialista
+    - img
+  - link "Conheça o Projeto":
+    - /url: "#sobre"
+  - img
+  - text: 500+ Clientes Satisfeitos
+  - img
+  - text: 5+ Anos de Experiência
+  - img
+  - text: 98% Taxa de Satisfação
+  - img "Veralucia Trindade Santos - VERACARE PODÓLOGA em seu consultório profissional"
+  - heading "Veralucia Trindade Santos" [level=3]
+  - paragraph: Podóloga Profissional Especializada
+  - paragraph: Mais de 7 anos de experiência em cuidados podológicos, especialista em tecnologia nano cosmética.
+  - text: 7+ Anos 800+ Clientes
+  - img
+  - text: Agenda Mensal
+  - heading "Horários Disponíveis" [level=2]
+  - paragraph:
+    - text: Consulte nossa agenda e escolha o melhor horário para sua consulta de
+    - strong: 10 a 30 minutos
+    - text: . Atendimento de
+    - strong: segunda a sexta das 6h às 22h
+    - text: .
+  - button "Mês anterior":
+    - img
+  - heading "Agosto 2025" [level=3]
+  - button "Próximo mês":
+    - img
+  - text: Dom Seg Ter Qua Qui Sex Sáb
+  - button "27" [disabled]
+  - button "28" [disabled]
+  - button "29" [disabled]
+  - button "30" [disabled]
+  - button "31" [disabled]
+  - button "1" [disabled]
+  - button "2" [disabled]
+  - button "3" [disabled]
+  - button "4" [disabled]
+  - button "5" [disabled]
+  - button "6" [disabled]
+  - button "7" [disabled]
+  - button "8" [disabled]
+  - button "9" [disabled]
+  - button "10" [disabled]
+  - button "11" [disabled]
+  - button "12" [disabled]
+  - button "13" [disabled]
+  - button "14" [disabled]
+  - button "15" [disabled]
+  - button "16" [disabled]
+  - button "17" [disabled]
+  - button "18" [disabled]
+  - button "19 16 vagas"
+  - button "20 23 vagas"
+  - button "21 21 vagas"
+  - button "22 22 vagas"
+  - button "23 21 vagas"
+  - button "24" [disabled]
+  - button "25 22 vagas"
+  - button "26 20 vagas"
+  - button "27 23 vagas"
+  - button "28 27 vagas"
+  - button "29 21 vagas"
+  - button "30 25 vagas"
+  - button "31" [disabled]
+  - button "1" [disabled]
+  - button "2" [disabled]
+  - button "3" [disabled]
+  - button "4" [disabled]
+  - button "5" [disabled]
+  - button "6" [disabled]
+  - text: Hoje Disponível Indisponível
+  - img
+  - heading "Selecione uma Data" [level=3]
+  - paragraph: Clique em um dia no calendário para ver os horários disponíveis
+  - heading "Prefere Falar Diretamente?" [level=3]
+  - paragraph: Entre em contato via WhatsApp para agendar ou esclarecer dúvidas sobre nossos serviços
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de falar com a especialista sobre agendamento de consulta de podologia.
+    - img
+    - text: Falar com a Especialista
+  - heading "Serviços em Preparação" [level=2]
+  - paragraph: Estamos planejando uma ampla gama de serviços podológicos com equipamentos modernos e técnicas atualizadas. Em breve ofereceremos o melhor cuidado para seus pés.
+  - img
+  - heading "Corte de Unhas Profissional" [level=3]
+  - paragraph: Corte técnico de unhas com instrumentos esterilizados, prevenindo encravamentos e infecções.
+  - text: Em planejamento
+  - img
+  - text: 30 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Remoção de Calos e Calosidades" [level=3]
+  - paragraph: Remoção segura e eficaz de calos, calosidades e hiperqueratose com técnicas especializadas.
+  - text: Em planejamento
+  - img
+  - text: 45 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Tratamento de Unhas Encravadas" [level=3]
+  - paragraph: Tratamento completo para unhas encravadas incluindo técnicas de reeducação ungueal.
+  - text: Em planejamento
+  - img
+  - text: 60 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Tratamento de Micoses e Fungos" [level=3]
+  - paragraph: Diagnóstico e tratamento especializado de micoses, onicomicoses e infecções fúngicas.
+  - text: Em planejamento
+  - img
+  - text: 50 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Pedicure Terapêutica" [level=3]
+  - paragraph: Pedicure completa com limpeza profunda, esfoliação, hidratação e massagem relaxante.
+  - text: Em planejamento
+  - img
+  - text: 60 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Cuidados com Pé Diabético" [level=3]
+  - paragraph: Atendimento especializado para diabéticos com técnicas preventivas e cuidados específicos.
+  - text: Em planejamento
+  - img
+  - text: 75 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Tratamento de Verrugas Plantares" [level=3]
+  - paragraph: Remoção e tratamento de verrugas plantares com técnicas modernas e seguras.
+  - text: Em planejamento
+  - img
+  - text: 50 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - img
+  - heading "Órteses e Palmilhas" [level=3]
+  - paragraph: Confecção de órteses em silicone e indicação de palmilhas para correção e alívio.
+  - text: Em planejamento
+  - img
+  - text: 90 min
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+  - heading "Precisa de um Atendimento Personalizado?" [level=3]
+  - paragraph: Entre em contato conosco para uma avaliação completa e recomendações específicas para seu caso.
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma avaliação podológica (10-30 minutos) com a especialista.
+  - link "Falar no WhatsApp":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de falar com a especialista sobre os serviços de podologia.
+  - img
+  - text: Produtos Nano Cosméticos
+  - heading "Nossa Linha Premium" [level=2]
+  - paragraph: Descubra nossa exclusiva linha de produtos nano cosméticos desenvolvidos especialmente para cuidados profissionais e domésticos dos pés.
+  - img
+  - textbox "Buscar produtos..."
+  - img
+  - button "Todos"
+  - button "Kits"
+  - button "Para Unhas"
+  - button "Para a Pele"
+  - button "Para os Pés"
+  - img
+  - text: 0 🧴 Mais Vendido -24%
+  - button:
+    - img
+  - text: Kits
+  - heading "Kit Podal Nano Completo" [level=3]
+  - paragraph: Kit profissional completo com produtos nano tecnológicos para tratamento completo dos pés.
+  - img
+  - text: 4.9 (24 avaliações) R$ 189,90R$ 249,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴 -25%
+  - button:
+    - img
+  - text: Kits
+  - heading "Kit Iniciante Podologia" [level=3]
+  - paragraph: Kit básico para quem está começando os cuidados podológicos profissionais.
+  - img
+  - text: 4.7 (24 avaliações) R$ 89,90R$ 119,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Kits
+  - heading "Kit Nano Hidratação" [level=3]
+  - paragraph: Kit especializado em hidratação profunda com tecnologia nano cosmética.
+  - img
+  - text: 4.8 (24 avaliações) R$ 129,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para Unhas
+  - heading "Nano Fortalecedor de Unhas" [level=3]
+  - paragraph: Fórmula nano tecnológica para fortalecimento e crescimento saudável das unhas.
+  - img
+  - text: 4.8 (24 avaliações) R$ 45,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para Unhas
+  - heading "Óleo Nano Cutículas" [level=3]
+  - paragraph: Óleo com nano partículas para hidratação e tratamento das cutículas.
+  - img
+  - text: 4.6 (24 avaliações) R$ 32,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para Unhas
+  - heading "Base Nano Proteção" [level=3]
+  - paragraph: Base protetora com nano tecnologia para unhas mais resistentes.
+  - img
+  - text: 4.7 (24 avaliações) R$ 38,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴 Mais Vendido
+  - button:
+    - img
+  - text: Para a Pele
+  - heading "Nano Creme Anti-Aging Pés" [level=3]
+  - paragraph: Creme com nano peptídeos para rejuvenescimento da pele dos pés.
+  - img
+  - text: 4.9 (24 avaliações) R$ 69,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para a Pele
+  - heading "Nano Esfoliante Renovador" [level=3]
+  - paragraph: Esfoliante com nano cristais para renovação celular profunda.
+  - img
+  - text: 4.7 (24 avaliações) R$ 54,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para a Pele
+  - heading "Sérum Nano Hidratante" [level=3]
+  - paragraph: Sérum concentrado com nano hialurônico para hidratação intensa.
+  - img
+  - text: 4.8 (24 avaliações) R$ 78,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para os Pés
+  - heading "Nano Spray Refrescante" [level=3]
+  - paragraph: Spray com nano mentol para alívio imediato e sensação refrescante.
+  - img
+  - text: 4.6 (24 avaliações) R$ 35,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para os Pés
+  - heading "Nano Creme Anti-Rachaduras" [level=3]
+  - paragraph: Creme especializado com nano reparadores para calcanhares rachados.
+  - img
+  - text: 4.8 (24 avaliações) R$ 49,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - text: 🧴
+  - button:
+    - img
+  - text: Para os Pés
+  - heading "Nano Talco Terapêutico" [level=3]
+  - paragraph: Talco com nano antifúngicos para prevenção de micoses e odores.
+  - img
+  - text: 4.5 (24 avaliações) R$ 28,90
+  - button "Consultar no WhatsApp":
+    - img
+    - text: Consultar no WhatsApp
+  - heading "Dúvidas sobre nossos produtos?" [level=3]
+  - paragraph: Nossa equipe especializada está pronta para ajudá-lo a escolher os melhores produtos
+  - link "Falar com Especialista":
+    - /url: https://wa.me/5511967381029
+    - text: Falar com Especialista
+    - img
+  - img
+  - text: Inovação em Podologia
+  - heading "Tecnologia de Ponta" [level=2]
+  - paragraph: Utilizamos as mais avançadas tecnologias em nano cosméticos e tratamentos personalizados para proporcionar resultados excepcionais em podologia.
+  - img
+  - heading "Nano Tecnologia" [level=3]
+  - paragraph: Produtos com partículas nanométricas para penetração profunda e resultados superiores
+  - list:
+    - listitem: Absorção rápida
+    - listitem: Ação prolongada
+    - listitem: Máxima eficácia
+  - img
+  - heading "Fórmulas Avançadas" [level=3]
+  - paragraph: Composições exclusivas desenvolvidas com ingredientes ativos de última geração
+  - list:
+    - listitem: Resultados visíveis
+    - listitem: Segurança comprovada
+    - listitem: Inovação constante
+  - img
+  - heading "Tratamentos Personalizados" [level=3]
+  - paragraph: Análise detalhada para prescrever o tratamento ideal para cada necessidade
+  - list:
+    - listitem: Diagnóstico preciso
+    - listitem: Protocolo exclusivo
+    - listitem: Acompanhamento contínuo
+  - img
+  - heading "Precisão" [level=4]
+  - paragraph: Ação direcionada nas áreas que mais necessitam de cuidados
+  - img
+  - heading "Segurança" [level=4]
+  - paragraph: Produtos testados e aprovados por especialistas em podologia
+  - img
+  - heading "Eficiência" [level=4]
+  - paragraph: Resultados visíveis em menor tempo de tratamento
+  - heading "Experimente Nossa Tecnologia" [level=3]
+  - paragraph: Agende uma consulta (10 a 30 minutos) e descubra como nossa tecnologia pode transformar a saúde dos seus pés
+  - link "Agendar Avaliação via WhatsApp":
+    - /url: https://wa.me/5511967381029?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20podologia%20(10-30%20minutos)%20com%20a%20especialista.
+    - text: Agendar Avaliação via WhatsApp
+    - img
+  - img
+  - text: Material de Estudo
+  - heading "Casos de Estudo e Referências" [level=2]
+  - paragraph: Durante nossa formação, compilamos diversos casos de estudo e referências que servirão como base para nossos futuros atendimentos profissionais.
+  - img
+  - text: "Atualizações: Dezembro 2024 - Junho 2025"
+  - img
+  - text: 50 procedimentos documentados
+  - button "Todos"
+  - button "Casos de Estudo"
+  - button "Técnicas Avançadas"
+  - button "Referências Visuais"
+  - button "Destaques⭐"
+  - text: 50 Procedimentos Realizados 7 Casos de Destaque 7+ Meses Documentados ⭐ Destaque
+  - img "Tratamento Podológico Completo"
+  - text: Tratamento Geral 18 de dezembro de 2024
+  - heading "Tratamento Podológico Completo" [level=3]
+  - paragraph: Cuidados especializados realizados em dezembro
+  - paragraph: Clique para ampliar
+  - img "Procedimento Especializado"
+  - text: Tratamento Geral 18 de dezembro de 2024
+  - heading "Procedimento Especializado" [level=3]
+  - paragraph: Resultado após tratamento profissional
+  - paragraph: Clique para ampliar
+  - img "Cuidados Detalhados dos Pés"
+  - text: Tratamento Geral 6 de março de 2025
+  - heading "Cuidados Detalhados dos Pés" [level=3]
+  - paragraph: Procedimento realizado em março com excelentes resultados
+  - paragraph: Clique para ampliar
+  - img "Tratamento Especializado"
+  - text: Tratamento Geral 6 de março de 2025
+  - heading "Tratamento Especializado" [level=3]
+  - paragraph: Cuidados profissionais com técnicas avançadas
+  - paragraph: Clique para ampliar
+  - img "Resultado Final do Tratamento"
+  - text: Antes e Depois 6 de março de 2025
+  - heading "Resultado Final do Tratamento" [level=3]
+  - paragraph: Pés saudáveis após procedimento completo
+  - paragraph: Clique para ampliar
+  - img "Procedimento Avançado"
+  - text: Tratamento Geral 9 de março de 2025
+  - heading "Procedimento Avançado" [level=3]
+  - paragraph: Técnicas especializadas em podologia
+  - paragraph: Clique para ampliar
+  - img "Cuidados Profissionais"
+  - text: Tratamento Geral 9 de março de 2025
+  - heading "Cuidados Profissionais" [level=3]
+  - paragraph: Resultado de tratamento especializado
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Tratamento Complexo"
+  - text: Tratamento Especializado 7 de abril de 2025
+  - heading "Tratamento Complexo" [level=3]
+  - paragraph: Procedimento detalhado realizado em abril
+  - paragraph: Clique para ampliar
+  - img "Cuidados Noturnos"
+  - text: Tratamento Geral 7 de abril de 2025
+  - heading "Cuidados Noturnos" [level=3]
+  - paragraph: Atendimento especializado em horário diferenciado
+  - paragraph: Clique para ampliar
+  - img "Procedimento Matinal"
+  - text: Tratamento Geral 13 de abril de 2025
+  - heading "Procedimento Matinal" [level=3]
+  - paragraph: Início de tratamento com excelente prognóstico
+  - paragraph: Clique para ampliar
+  - img "Tratamento Vespertino"
+  - text: Tratamento Geral 2 de maio de 2025
+  - heading "Tratamento Vespertino" [level=3]
+  - paragraph: Cuidados especializados em maio
+  - paragraph: Clique para ampliar
+  - img "Procedimento Detalhado"
+  - text: Tratamento Especializado 2 de maio de 2025
+  - heading "Procedimento Detalhado" [level=3]
+  - paragraph: Técnicas avançadas aplicadas
+  - paragraph: Clique para ampliar
+  - img "Resultado Intermediário"
+  - text: Antes e Depois 2 de maio de 2025
+  - heading "Resultado Intermediário" [level=3]
+  - paragraph: Progresso do tratamento documentado
+  - paragraph: Clique para ampliar
+  - img "Finalização do Procedimento"
+  - text: Tratamento Geral 2 de maio de 2025
+  - heading "Finalização do Procedimento" [level=3]
+  - paragraph: Últimos ajustes do tratamento
+  - paragraph: Clique para ampliar
+  - img "Cuidados Finais"
+  - text: Tratamento Geral 2 de maio de 2025
+  - heading "Cuidados Finais" [level=3]
+  - paragraph: Acabamento profissional do tratamento
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Tratamento Completo"
+  - text: Tratamento Especializado 4 de maio de 2025
+  - heading "Tratamento Completo" [level=3]
+  - paragraph: Procedimento abrangente realizado
+  - paragraph: Clique para ampliar
+  - img "Cuidados Vespertinos"
+  - text: Tratamento Geral 9 de maio de 2025
+  - heading "Cuidados Vespertinos" [level=3]
+  - paragraph: Atendimento especializado no final da tarde
+  - paragraph: Clique para ampliar
+  - img "Sequência do Tratamento"
+  - text: Tratamento Geral 9 de maio de 2025
+  - heading "Sequência do Tratamento" [level=3]
+  - paragraph: Continuidade dos cuidados especializados
+  - paragraph: Clique para ampliar
+  - img "Procedimento Avançado"
+  - text: Tratamento Especializado 9 de maio de 2025
+  - heading "Procedimento Avançado" [level=3]
+  - paragraph: Técnicas especializadas aplicadas
+  - paragraph: Clique para ampliar
+  - img "Continuação do Tratamento"
+  - text: Antes e Depois 9 de maio de 2025
+  - heading "Continuação do Tratamento" [level=3]
+  - paragraph: Evolução positiva documentada
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Resultado Final"
+  - text: Antes e Depois 9 de maio de 2025
+  - heading "Resultado Final" [level=3]
+  - paragraph: Conclusão bem-sucedida do procedimento
+  - paragraph: Clique para ampliar
+  - img "Tratamento Especializado"
+  - text: Tratamento Especializado 11 de maio de 2025
+  - heading "Tratamento Especializado" [level=3]
+  - paragraph: Procedimento detalhado em maio
+  - paragraph: Clique para ampliar
+  - img "Cuidados Profissionais"
+  - text: Tratamento Geral 11 de maio de 2025
+  - heading "Cuidados Profissionais" [level=3]
+  - paragraph: Sequência de tratamento especializado
+  - paragraph: Clique para ampliar
+  - img "Procedimento Vespertino"
+  - text: Tratamento Geral 11 de maio de 2025
+  - heading "Procedimento Vespertino" [level=3]
+  - paragraph: Tratamento realizado no período da tarde
+  - paragraph: Clique para ampliar
+  - img "Continuidade do Cuidado"
+  - text: Tratamento Geral 11 de maio de 2025
+  - heading "Continuidade do Cuidado" [level=3]
+  - paragraph: Evolução contínua do tratamento
+  - paragraph: Clique para ampliar
+  - img "Documentação do Progresso"
+  - text: Antes e Depois 11 de maio de 2025
+  - heading "Documentação do Progresso" [level=3]
+  - paragraph: Acompanhamento detalhado da evolução
+  - paragraph: Clique para ampliar
+  - img "Resultado Documentado"
+  - text: Antes e Depois 11 de maio de 2025
+  - heading "Resultado Documentado" [level=3]
+  - paragraph: Registro preciso dos resultados obtidos
+  - paragraph: Clique para ampliar
+  - img "Tratamento Matinal"
+  - text: Tratamento Geral 18 de maio de 2025
+  - heading "Tratamento Matinal" [level=3]
+  - paragraph: Procedimento realizado pela manhã
+  - paragraph: Clique para ampliar
+  - img "Cuidados Matinais"
+  - text: Tratamento Geral 20 de maio de 2025
+  - heading "Cuidados Matinais" [level=3]
+  - paragraph: Início de dia com tratamento especializado
+  - paragraph: Clique para ampliar
+  - img "Sequência Matinal"
+  - text: Tratamento Geral 20 de maio de 2025
+  - heading "Sequência Matinal" [level=3]
+  - paragraph: Continuidade dos cuidados especializados
+  - paragraph: Clique para ampliar
+  - img "Procedimento Detalhado"
+  - text: Tratamento Especializado 21 de maio de 2025
+  - heading "Procedimento Detalhado" [level=3]
+  - paragraph: Técnicas avançadas aplicadas
+  - paragraph: Clique para ampliar
+  - img "Cuidados Especializados"
+  - text: Tratamento Especializado 21 de maio de 2025
+  - heading "Cuidados Especializados" [level=3]
+  - paragraph: Atenção profissional aos detalhes
+  - paragraph: Clique para ampliar
+  - img "Tratamento Avançado"
+  - text: Tratamento Especializado 21 de maio de 2025
+  - heading "Tratamento Avançado" [level=3]
+  - paragraph: Aplicação de técnicas especializadas
+  - paragraph: Clique para ampliar
+  - img "Finalização Profissional"
+  - text: Antes e Depois 21 de maio de 2025
+  - heading "Finalização Profissional" [level=3]
+  - paragraph: Conclusão com padrão de excelência
+  - paragraph: Clique para ampliar
+  - img "Cuidados Matinais"
+  - text: Tratamento Geral 22 de maio de 2025
+  - heading "Cuidados Matinais" [level=3]
+  - paragraph: Tratamento especializado pela manhã
+  - paragraph: Clique para ampliar
+  - img "Procedimento Matinal"
+  - text: Tratamento Geral 22 de maio de 2025
+  - heading "Procedimento Matinal" [level=3]
+  - paragraph: Início de dia com cuidados especializados
+  - paragraph: Clique para ampliar
+  - img "Tratamento de Junho"
+  - text: Tratamento Geral 1 de junho de 2025
+  - heading "Tratamento de Junho" [level=3]
+  - paragraph: Cuidados especializados no mês de junho
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Procedimento Vespertino"
+  - text: Tratamento Especializado 1 de junho de 2025
+  - heading "Procedimento Vespertino" [level=3]
+  - paragraph: Atendimento especializado à tarde
+  - paragraph: Clique para ampliar
+  - img "Continuidade do Tratamento"
+  - text: Tratamento Geral 1 de junho de 2025
+  - heading "Continuidade do Tratamento" [level=3]
+  - paragraph: Evolução positiva documentada
+  - paragraph: Clique para ampliar
+  - img "Cuidados Vespertinos"
+  - text: Tratamento Geral 1 de junho de 2025
+  - heading "Cuidados Vespertinos" [level=3]
+  - paragraph: Tratamento realizado no final da tarde
+  - paragraph: Clique para ampliar
+  - img "Procedimento Detalhado"
+  - text: Tratamento Especializado 1 de junho de 2025
+  - heading "Procedimento Detalhado" [level=3]
+  - paragraph: Atenção aos mínimos detalhes
+  - paragraph: Clique para ampliar
+  - img "Tratamento Completo"
+  - text: Tratamento Especializado 1 de junho de 2025
+  - heading "Tratamento Completo" [level=3]
+  - paragraph: Procedimento abrangente realizado
+  - paragraph: Clique para ampliar
+  - img "Cuidados Especializados"
+  - text: Tratamento Especializado 1 de junho de 2025
+  - heading "Cuidados Especializados" [level=3]
+  - paragraph: Técnicas avançadas aplicadas
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Resultado Final"
+  - text: Antes e Depois 1 de junho de 2025
+  - heading "Resultado Final" [level=3]
+  - paragraph: Conclusão bem-sucedida do procedimento
+  - paragraph: Clique para ampliar
+  - img "Tratamento Matinal"
+  - text: Tratamento Geral 7 de junho de 2025
+  - heading "Tratamento Matinal" [level=3]
+  - paragraph: Procedimento realizado pela manhã
+  - paragraph: Clique para ampliar
+  - img "Cuidados Matinais"
+  - text: Tratamento Geral 17 de junho de 2025
+  - heading "Cuidados Matinais" [level=3]
+  - paragraph: Início de dia com tratamento especializado
+  - paragraph: Clique para ampliar
+  - img "Sequência Matinal"
+  - text: Tratamento Geral 17 de junho de 2025
+  - heading "Sequência Matinal" [level=3]
+  - paragraph: Continuidade dos cuidados profissionais
+  - paragraph: Clique para ampliar
+  - img "Procedimento Especializado"
+  - text: Tratamento Especializado 17 de junho de 2025
+  - heading "Procedimento Especializado" [level=3]
+  - paragraph: Aplicação de técnicas avançadas
+  - paragraph: Clique para ampliar
+  - img "Tratamento Final de Junho"
+  - text: Tratamento Geral 29 de junho de 2025
+  - heading "Tratamento Final de Junho" [level=3]
+  - paragraph: Conclusão dos cuidados do mês
+  - paragraph: Clique para ampliar
+  - text: ⭐ Destaque
+  - img "Resultado Excepcional"
+  - text: Antes e Depois 29 de junho de 2025
+  - heading "Resultado Excepcional" [level=3]
+  - paragraph: Finalização com excelência profissional
+  - paragraph: Clique para ampliar
+  - img
+  - text: Guia Educativo
+  - heading "Entenda Nossos Tratamentos" [level=2]
+  - paragraph: Conheça em detalhes cada serviço podológico que oferecemos. Informação é o primeiro passo para cuidados adequados com seus pés.
+  - link "Centro Educativo Completo":
+    - /url: /educacao/
+    - img
+    - text: Centro Educativo Completo
+    - img
+  - img "Corte de Unhas Profissional"
+  - heading "Corte de Unhas Profissional" [level=3]
+  - paragraph: Corte técnico de unhas com instrumentos esterilizados, prevenindo encravamentos e infecções.
+  - img
+  - text: 30 min Clique para saber mais
+  - img
+  - img "Remoção de Calos e Calosidades"
+  - heading "Remoção de Calos e Calosidades" [level=3]
+  - paragraph: Remoção segura e eficaz de calos, calosidades e hiperqueratose com técnicas especializadas.
+  - img
+  - text: 45 min Clique para saber mais
+  - img
+  - img "Tratamento de Unhas Encravadas"
+  - heading "Tratamento de Unhas Encravadas" [level=3]
+  - paragraph: Tratamento completo para unhas encravadas incluindo técnicas de reeducação ungueal.
+  - img
+  - text: 60 min Clique para saber mais
+  - img
+  - img "Tratamento de Micoses e Fungos"
+  - heading "Tratamento de Micoses e Fungos" [level=3]
+  - paragraph: Diagnóstico e tratamento especializado de micoses, onicomicoses e infecções fúngicas.
+  - img
+  - text: 50 min Clique para saber mais
+  - img
+  - img "Pedicure Terapêutica"
+  - heading "Pedicure Terapêutica" [level=3]
+  - paragraph: Pedicure completa com limpeza profunda, esfoliação, hidratação e massagem relaxante.
+  - img
+  - text: 60 min Clique para saber mais
+  - img
+  - img "Cuidados com Pé Diabético"
+  - heading "Cuidados com Pé Diabético" [level=3]
+  - paragraph: Atendimento especializado para diabéticos com técnicas preventivas e cuidados específicos.
+  - img
+  - text: 75 min Clique para saber mais
+  - img
+  - heading "💡 Dicas Importantes para a Saúde dos Seus Pés" [level=3]
+  - img
+  - heading "Prevenção" [level=4]
+  - paragraph: Mantenha uma rotina de cuidados preventivos diários
+  - img
+  - heading "Profissional" [level=4]
+  - paragraph: Sempre procure um podólogo qualificado
+  - img
+  - heading "Regularidade" [level=4]
+  - paragraph: Siga as orientações de frequência dos tratamentos
+  - heading "🧪 Teste de Formulário" [level=3]
+  - text: "Nome:"
+  - textbox "Digite seu nome"
+  - paragraph: "Valor:"
+  - text: "Telefone:"
+  - textbox "Digite seu telefone"
+  - paragraph: "Valor:"
+  - button "Testar Valores"
+  - img
+  - text: Agendamento Online
+  - heading "Agende sua Consulta" [level=2]
+  - paragraph: Sistema de agendamento online com confirmação automática via WhatsApp e e-mail. Receba lembretes antes da sua consulta.
+  - heading "Horários de Atendimento" [level=3]:
+    - img
+    - text: Horários de Atendimento
+  - paragraph:
+    - text: 📅
+    - strong: Segunda a Sexta-feira
+  - paragraph:
+    - text: 🕕
+    - strong: 06:00 às 22:00
+  - paragraph:
+    - text: "⏱️ Duração das consultas:"
+    - strong: 10 a 30 minutos
+  - paragraph:
+    - text: 📞 Agendamentos com pelo menos
+    - strong: 2 horas de antecedência
+  - img
+  - text: Nome Completo *
+  - textbox "Nome Completo *"
+  - img
+  - text: Telefone/WhatsApp *
+  - textbox "Telefone *"
+  - img
+  - text: E-mail (opcional)
+  - textbox "E-mail *"
+  - img
+  - text: Data da Consulta *
+  - textbox
+  - img
+  - text: Horário *
+  - combobox "Selecione o horário desejado" [disabled]:
+    - option "Primeiro selecione uma data" [selected]
+  - text: 🩺 Tipo de Serviço
+  - combobox "Selecione o tipo de serviço":
+    - option "Consulta Podológica" [selected]
+    - option "Tratamento de Unhas Encravadas"
+    - option "Remoção de Calos e Calosidades"
+    - option "Tratamento de Micoses"
+    - option "Cuidados com Pé Diabético"
+    - option "Avaliação Postural dos Pés"
+    - option "Limpeza e Hidratação"
+  - img
+  - text: Observações (opcional)
+  - textbox "Descreva brevemente o motivo da consulta ou alguma informação importante..."
+  - strong: "DEBUG formData:"
+  - text: "{ \"name\": \"\", \"email\": \"\", \"phone\": \"\", \"date\": \"\", \"time\": \"\", \"serviceType\": \"Consulta Podológica\", \"notes\": \"\" }"
+  - button "Agendar Consulta":
+    - img
+    - text: Agendar Consulta
+  - heading "📱 Confirmação Automática" [level=3]
+  - paragraph: Após o agendamento, você receberá uma confirmação imediata por WhatsApp e/ou e-mail com todos os detalhes da sua consulta.
+  - heading "🔔 Lembretes" [level=3]
+  - paragraph: Enviaremos lembretes automáticos 1 dia, 6 horas e 3 horas antes da sua consulta para que você não se esqueça.
+  - heading "Sobre o Projeto" [level=2]
+  - paragraph: Somos estudantes de Podologia planejando cuidadosamente o futuro consultório. Em processo de formação profissional, estamos preparando um espaço moderno e acolhedor para oferecer tratamentos podológicos especializados com tecnologia de ponta e máxima qualidade no atendimento.
+  - heading "Nossa Visão" [level=3]
+  - paragraph: Ser referência em cuidados podológicos na região, oferecendo atendimento humanizado, técnicas atualizadas e produtos de alta qualidade para promover a saúde e bem-estar dos nossos futuros pacientes.
+  - heading "Em Preparação" [level=3]
+  - paragraph: • Formação acadêmica em andamento • Planejamento de equipamentos modernos • Estudos de protocolos atualizados • Preparação do espaço físico • Seleção de produtos especializados
+  - heading "Nossos Valores" [level=3]
+  - list:
+    - listitem: Excelência no atendimento
+    - listitem: Segurança e higiene rigorosas
+    - listitem: Atualização constante em técnicas
+    - listitem: Atendimento humanizado
+  - heading "Informações da Empresa" [level=3]
+  - text: VC
+  - heading "Veralucia Trindade Santos" [level=4]
+  - paragraph: Proprietária e Podóloga Profissional
+  - paragraph: Especialista em tratamentos podológicos com mais de 10 anos de experiência, oferecendo cuidados especializados com foco em prevenção, tratamentos terapêuticos e bem-estar integral dos pés.
+  - heading "Dados da Empresa" [level=5]
+  - text: "Razão Social: Veralucia Trindade Santos CNPJ: 28.315.288/0001-02 Atividade: Cabeleireiros, manicure e pedicure Situação: Ativa desde 01/08/2017"
+  - heading "Localização" [level=5]
+  - text: "Endereço: Rua Montuori, 102 Bairro: Vila Barbosa CEP: 02557-011 Cidade/Estado: São Paulo - SP VTS"
+  - paragraph: Clínica VERACARE
+  - paragraph: Veralucia Trindade Santos - Podóloga
+  - img
+  - text: 300+ Clientes Atendidos
+  - img
+  - text: 7+ Anos de Atuação
+  - img
+  - text: 100% Satisfação
+  - img
+  - text: 800+ Tratamentos Realizados
+  - heading "Certificações e Qualificações" [level=3]
+  - img
+  - heading "Formação em Podologia" [level=4]
+  - img
+  - heading "Curso de Especialização" [level=4]
+  - img
+  - heading "Certificação em Biossegurança" [level=4]
+  - img
+  - heading "Atualização Contínua" [level=4]
+  - heading "Entre em Contato" [level=2]
+  - paragraph: Estamos prontos para cuidar da saúde dos seus pés. Entre em contato para agendar sua consulta ou esclarecer dúvidas.
+  - heading "Informações de Contato" [level=3]
+  - img
+  - heading "Endereço" [level=4]
+  - paragraph: "Rua Montuori, 102 - Vila Barbosa São Paulo - SP, CEP: 02557-011"
+  - img
+  - heading "Telefone / WhatsApp" [level=4]
+  - link "(11) 96738-1029":
+    - /url: https://api.whatsapp.com/send?phone=5511967381029&text=Olá! Gostaria de agendar uma consulta de podologia.
+  - img
+  - heading "E-mail" [level=4]
+  - paragraph: contato@veracare.com.br
+  - img
+  - heading "Instagram" [level=4]
+  - link "@veracare_podologa":
+    - /url: https://www.instagram.com/veracare_podologa/
+  - img
+  - heading "Horário de Funcionamento" [level=4]
+  - paragraph: "Segunda a Sexta: 8h às 18h"
+  - paragraph: "Sábado: 8h às 12h"
+  - paragraph: "Domingo: Fechado"
+  - heading "Ações Rápidas" [level=4]
+  - link "Falar com a Especialista":
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de agendar uma consulta de podologia (10-30 minutos) com a especialista.
+    - img
+    - text: Falar com a Especialista
+  - 'link "WhatsApp: (11) 96738-1029"':
+    - /url: https://wa.me/5511967381029?text=Olá! Gostaria de falar sobre os serviços de podologia.
+    - img
+    - text: "WhatsApp: (11) 96738-1029"
+  - heading "Envie sua Mensagem" [level=3]
+  - text: Nome Completo *
+  - textbox "Seu nome completo"
+  - text: E-mail *
+  - textbox "seu@email.com"
+  - text: Telefone *
+  - textbox "(11) 99999-9999"
+  - text: Serviço de Interesse
+  - combobox "Serviço de Interesse":
+    - option "Selecione um serviço" [selected]
+    - option "Corte de Unhas"
+    - option "Remoção de Calos"
+    - option "Tratamento de Unhas Encravadas"
+    - option "Tratamento de Micoses"
+    - option "Limpeza Profunda"
+    - option "Pé Diabético"
+    - option "Avaliação Completa"
+  - text: Mensagem
+  - textbox "Mensagem"
+  - button "Enviar Mensagem":
+    - img
+    - text: Enviar Mensagem
+  - heading "Nossa Localização" [level=3]
+  - img
+  - paragraph: Mapa da localização
+  - paragraph: (Integre com Google Maps)
+  - text: VC
+  - heading "VERACARE PODÓLOGA" [level=3]
+  - paragraph: Podologia Profissional
+  - paragraph: Especialista em cuidados podológicos com mais de 10 anos de experiência. Sua saúde e bem-estar são nossa prioridade.
+  - paragraph: Veralucia Trindade Santos
+  - paragraph: "CNPJ: 28.315.288/0001-02"
+  - link:
+    - /url: https://www.instagram.com/veracare_podologa/
+    - img
+  - heading "Serviços" [level=4]
+  - list:
+    - listitem:
+      - link "Corte de Unhas":
+        - /url: "#servicos"
+    - listitem:
+      - link "Remoção de Calos":
+        - /url: "#servicos"
+    - listitem:
+      - link "Unhas Encravadas":
+        - /url: "#servicos"
+    - listitem:
+      - link "Tratamento de Micoses":
+        - /url: "#servicos"
+    - listitem:
+      - link "Pé Diabético":
+        - /url: "#servicos"
+  - heading "Produtos" [level=4]
+  - list:
+    - listitem:
+      - link "Cremes Hidratantes":
+        - /url: "#produtos"
+    - listitem:
+      - link "Óleos Antifúngicos":
+        - /url: "#produtos"
+    - listitem:
+      - link "Esfoliantes":
+        - /url: "#produtos"
+    - listitem:
+      - link "Kits Completos":
+        - /url: "#produtos"
+    - listitem:
+      - link "Protetores":
+        - /url: "#produtos"
+  - heading "Contato" [level=4]
+  - img
+  - text: "Rua Montuori, 102 - Vila Barbosa São Paulo - SP, CEP: 02557-011"
+  - img
+  - link "(11) 96738-1029":
+    - /url: https://api.whatsapp.com/send?phone=5511967381029
+  - img
+  - text: contato@veracare.com.br
+  - heading "Horário de Funcionamento" [level=5]
+  - paragraph: "Seg-Sex: 8h às 18h"
+  - paragraph: "Sáb: 8h às 12h"
+  - paragraph: "Dom: Fechado"
+  - paragraph: © 2024 VERACARE_PODOLOGA. Todos os direitos reservados.
+  - paragraph:
+    - text: Desenvolvido por
+    - link "Kleidir DevOps":
+      - /url: mailto:kleidir.devops@gmail.com
+  - link "Política de Privacidade":
+    - /url: "#"
+  - link "Termos de Uso":
+    - /url: "#"
+  - link "Cookies":
+    - /url: "#"
+- alert
+```
